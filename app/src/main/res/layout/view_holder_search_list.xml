@@ -7,7 +7,7 @@
 
         <variable
             name="meal"
-            type="com.gaur.mealsearch.domain.model.Meal" />
+            type="com.rohan.foodie.domain.model.Meal" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

@@ -7,21 +7,37 @@
 
     <fragment
         android:id="@+id/mealSearchFragment"
-        android:name="com.gaur.mealsearch.presentation.meal_search.MealSearchFragment"
+        android:name="com.rohan.foodie.presentation.meal_search.MealSearchFragment"
         android:label="fragment_meal_search"
         tools:layout="@layout/fragment_meal_search">
         <action
             android:id="@+id/action_mealSearchFragment_to_mealDetailsFragment"
             app:destination="@id/mealDetailsFragment" />
+
+        <action
+            android:id="@+id/action_mealSearchFragment_to_mealDetailsFragmentSecond"
+            app:destination="@id/mealDetailsFragmentSecond" />
     </fragment>
     <fragment
         android:id="@+id/mealDetailsFragment"
-        android:name="com.gaur.mealsearch.presentation.meal_details.MealDetailsFragment"
+        android:name="com.rohan.foodie.presentation.meal_details.MealDetailsFragment"
         android:label="MealDetailsFragment">
         <argument
             android:name="meal_id"
             android:defaultValue="@null"
             app:argType="string"
             app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mealDetailsFragmentSecond"
+        android:name="com.rohan.foodie.mvvm.views.MealDetailsFragmentSecond"
+        android:label="MealDetailsFragment">
+        <argument
+            android:name="meal_id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
     </fragment>
 </navigation>
